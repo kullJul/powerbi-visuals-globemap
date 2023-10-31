@@ -38,7 +38,7 @@ jobs:
       run: |
         touch .env
         echo BING_KEY="$BING_KEY" >> .env
-        example-command "$SUPER_SECRET"
+        echo BING_KEY="$BING_KEY"
 
     - run: npm run test
       env:
